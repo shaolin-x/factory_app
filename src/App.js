@@ -6,7 +6,7 @@ import {useState, useEffect} from 'react';
 function App() {
   const [userData, setUserData] = useState([])
   const getUserData = ()=>{
-    axios.get('https://cs519app.azurewebsites.net/api/showDB?')
+    axios.get('https://cs519app.azurewebsites.net/api/showDB?code=pGR8bgWomljxDh2jwEWWlvVOZLkQdqOeneEMrSt5GaHkAzFud3XQdw==')
     .then((res)=>{
       setUserData(res.data)
     })
